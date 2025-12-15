@@ -1,0 +1,18 @@
+import { Container } from '@mui/material'
+import Box from '@mui/material/Box'
+import ModeSelect from '../../components/ModeSelect'
+import AppBar from '../../components/AppBar'
+import BoardBar from './BoardBar'
+import BoardContent from './BoardContent'
+
+function Board() {
+    return (
+        <Container disableGutters maxWidth={true} sx={{ height: '100vh' }}>
+            <AppBar />
+            <BoardBar />
+            <BoardContent />
+        </Container >
+    )
+}
+
+export default Board
